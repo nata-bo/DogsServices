@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" verbose="1" >
+
+    <test name="Regression" >
+        <classes>
+            <class name="org.ait.dogservices.apitests.kennels.AddKennelTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.apitests.kennels.GetKennelTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.apitests.kennels.GetAllKennelsTest" />
+            <class name="org.ait.dogservices.apitests.kennels.UpdateKennelTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+        </class>
+            <class name="org.ait.dogservices.apitests.kennels.DeleteKennelTest" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+
+            <class name="org.ait.dogservices.apitests.clinic.AddClinicTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.apitests.clinic.GetClinicTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.apitests.clinic.GetAllClinicTest" />
+            <class name="org.ait.dogservices.apitests.clinic.UpdateClinicTests" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.apitests.clinic.DeleteClinicTest" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
