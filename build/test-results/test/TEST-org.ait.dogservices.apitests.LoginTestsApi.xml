@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.LoginTestsApi" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-01T17:56:47" hostname="NATA-BOD" time="1.133">
+  <properties/>
+  <testcase name="loginWrongEmailNegativeTest" classname="org.ait.dogservices.apitests.LoginTestsApi" time="1.133"/>
+  <system-out><![CDATA[18:56:47.295 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- Start test loginWrongEmailNegativeTest with data: []
+Incorrect username or password
+18:56:48.438 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- PASSED: loginWrongEmailNegativeTest
+18:56:48.438 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- Stop test
+18:56:48.438 [Test worker] ERROR o.a.dogservices.apitests.TestBaseApi -- *********************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
