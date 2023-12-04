@@ -3,7 +3,7 @@ package org.ait.dogservices.mobtests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LogoutTest extends TestBaseMob {
+public class LogoutTestMob extends TestBaseMob {
 
     @BeforeMethod
     public void precondition() {

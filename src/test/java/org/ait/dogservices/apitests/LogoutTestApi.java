@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class LogoutTest extends TestBaseApi{
+public class LogoutTestApi extends TestBaseApi{
     @BeforeMethod
     public void precondition(){
         String username = "nat@mail.com";
