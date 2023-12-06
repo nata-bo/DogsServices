@@ -25,11 +25,11 @@ public class ClinicsPageTests extends TestBaseUi {
     }
 
     @Test
-    public void showClinicsListByCity(){
+    public void showClinicsListByCityTest(){
         new ClinicsPage(driver).selectCity("Berlin").verifyClinicsByCity("Tierarztpraxis");
     }
     @Test
-    public void showClinicsList(){
+    public void showClinicsListTest(){
         new ClinicsPage(driver).clickClinicsList().verifyClinics("Pets clinic");
 
     }
