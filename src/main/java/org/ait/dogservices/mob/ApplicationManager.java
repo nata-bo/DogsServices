@@ -1,6 +1,5 @@
 package org.ait.dogservices.mob;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -13,7 +12,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    AndroidDriver<MobileElement> driver;
+    AndroidDriver driver;
     //AppiumDriver driver;
     DesiredCapabilities capabilities;
     MainScreenHelper mainScreen;
@@ -40,7 +39,7 @@ public class ApplicationManager {
         chromeOptions.setExperimentalOption("w3c", false);
         capabilities.setCapability(AndroidMobileCapabilityType.CHROME_OPTIONS, chromeOptions);
 
-        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
       //  driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

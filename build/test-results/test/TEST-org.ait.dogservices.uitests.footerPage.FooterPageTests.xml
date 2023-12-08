@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.uitests.footerPage.FooterPageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-07T13:35:30" hostname="NATA-BOD" time="1.329">
+  <properties/>
+  <testcase name="switchToYoutubeTabTest" classname="org.ait.dogservices.uitests.footerPage.FooterPageTests" time="1.329"/>
+  <system-out><![CDATA[14:35:29.589 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- All test run in Chrome browser
+14:35:30.232 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- The link --> https://hunde24.online/front/
+14:35:30.233 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- ***********************************
+14:35:30.410 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- *****************************
+14:35:30.410 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- Start method --> switchToYoutubeTabTest
+14:35:31.489 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- We find element: By.xpath: //*[@id='root']/footer/div[1]/div[1]/div[2]/a[3]
+14:35:31.491 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+14:35:31.541 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- Element with locator (176, 3425)is found
+14:35:31.541 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+14:35:31.563 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- We find element: By.xpath: //*[@id='root']/footer/div[1]/div[1]/div[2]/a[3]
+14:35:31.563 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+14:35:31.589 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- Element with locator (176, 3425)is found
+14:35:31.590 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+14:35:31.599 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- We find element: By.xpath: //*[@id='root']/footer/div[1]/div[1]/div[2]/a[3]
+14:35:31.599 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+14:35:31.629 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- Element with locator (176, 3425)is found
+14:35:31.629 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+]]></system-out>
+  <system-err><![CDATA[Dez. 07, 2023 2:35:28 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNUNG: The chromedriver version (119.0.6045.105) detected in PATH at C:\Tools\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.63); currently, chromedriver 120.0.6099.71 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry
+Dez. 07, 2023 2:35:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find an exact match for CDP version 120, so returning the closest version found: 116
+]]></system-err>
+</testsuite>

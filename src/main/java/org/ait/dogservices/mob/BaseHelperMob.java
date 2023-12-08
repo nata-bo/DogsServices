@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class BaseHelperMob {
     AndroidDriver driver;
 
@@ -79,7 +81,7 @@ public class BaseHelperMob {
     }
 
     public void waitForElementAndTap(By locator, int timeout){
-        new WebDriverWait(driver,timeout).until(ExpectedConditions.presenceOfElementLocated(locator)).click();
+        new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(ExpectedConditions.presenceOfElementLocated(locator)).click();
     }
 
 }

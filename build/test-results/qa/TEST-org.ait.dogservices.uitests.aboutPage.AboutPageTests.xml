@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.uitests.aboutPage.AboutPageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-05T11:08:19" hostname="NATA-BOD" time="0.061">
+  <properties/>
+  <testcase name="isAboutComponentPresentTest" classname="org.ait.dogservices.uitests.aboutPage.AboutPageTests" time="0.061"/>
+  <system-out><![CDATA[12:08:16.715 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- All test run in Chrome browser
+12:08:17.440 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- The link --> https://hunde24.online/front/
+12:08:17.440 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- ***********************************
+12:08:17.769 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- *****************************
+12:08:17.770 [Test worker] INFO  o.ait.dogservices.uitests.TestBaseUi -- Start method --> isAboutComponentPresentTest
+12:08:18.830 [Forwarding actions on session f5d14eaa924c80bec00450065ce6ac4a to remote] INFO  o.a.dogservices.ui.utils.MyListener -- We find element: By.xpath: //a[contains(text(),'Um')]
+12:08:18.830 [Forwarding actions on session f5d14eaa924c80bec00450065ce6ac4a to remote] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+12:08:18.892 [Forwarding actions on session f5d14eaa924c80bec00450065ce6ac4a to remote] INFO  o.a.dogservices.ui.utils.MyListener -- Element with locator (555, 57)is found
+12:08:18.892 [Forwarding actions on session f5d14eaa924c80bec00450065ce6ac4a to remote] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+12:08:19.044 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- We find element: By.xpath: //a[contains(text(),'Find')]
+12:08:19.044 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+12:08:19.087 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- Element with locator (340, 609)is found
+12:08:19.087 [Test worker] INFO  o.a.dogservices.ui.utils.MyListener -- ******************************
+]]></system-out>
+  <system-err><![CDATA[Dez. 05, 2023 12:08:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find an exact match for CDP version 119, so returning the closest version found: 116
+]]></system-err>
+</testsuite>

@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
 
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.12.1'
 
     implementation 'org.testng:testng:7.8.0'
     implementation 'ch.qos.logback:logback-classic:1.4.11'
@@ -25,7 +25,7 @@ dependencies {
 
     implementation 'io.rest-assured:rest-assured:5.3.2'
 
-    implementation 'io.appium:java-client:7.6.0'
+    implementation 'io.appium:java-client:8.3.0'
 }
 
 test {
@@ -43,16 +43,21 @@ task qa1(type: Test) {
         def suite2 = project.hasProperty("suite2")
         def suite3 = project.hasProperty("suite3")
         def suite4 = project.hasProperty("suite4")
+        def suite5 = project.hasProperty("suite5")
+        def suite6 = project.hasProperty("suite6")
         if (suite1) {
-            suites 'src/test/resources/testng.xml'
-        }else if (suite2){
-            suites 'src/test/resources/mob.xml'
-        }else if (suite3){
+            suites 'src/test/resources/testng_api.xml'
+        } else if (suite2) {
+            suites 'src/test/resources/testng_mob.xml'
+        } else if (suite3) {
+            suites 'src/test/resources/testng_ui.xml'
+        } else if (suite4) {
             suites 'src/test/resources/regr_api.xml'
-        }else if (suite4){
-            suites 'src/test/resources/regr.xml'
+        } else if (suite5) {
+            suites 'src/test/resources/regr_mob.xml'
+        } else if (suite6) {
+            suites 'src/test/resources/regr_ui.xml'
+
         }
-
     }
-
 }
