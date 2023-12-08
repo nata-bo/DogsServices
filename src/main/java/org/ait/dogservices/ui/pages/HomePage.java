@@ -214,8 +214,8 @@ public class HomePage extends BasePage {
     public HomePage switchToFacebookTab(int index) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-        pause(1000);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        pause(1200);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(facebookLink)).click();
 
         List<String> tabs = new ArrayList<>(driver.getWindowHandles());
@@ -237,12 +237,12 @@ public class HomePage extends BasePage {
         return this;
     }
     @FindBy(xpath = "//*[@id='mount_0_0_Hh']/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]")
-    WebElement title;
+    WebElement facebookTitle;
     @FindBy(xpath = "//*[@id='mount_0_0_J+']/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/div/i")
     WebElement cross;
     public HomePage verifyNewFacebookTitle(String text) {
         click(cross);
-        Assert.assertTrue(isTextPresent(title,text));
+        Assert.assertTrue(isTextPresent(facebookTitle,text));
         return this;
     }
 
@@ -259,6 +259,24 @@ public class HomePage extends BasePage {
         }
 
         click(instagramLink);
+        return this;
+    }
+    public HomePage switchToInstagramTab(int index) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        pause(1000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(instagramLink)).click();
+
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(index));
+        return this;
+    }
+
+    @FindBy(xpath = "//h2[contains(text(),'hunde24service')]")
+    WebElement instagramTitle;
+    public HomePage verifyNewInstagramTitle(String text) {
+        Assert.assertTrue(isTextPresent(instagramTitle,text));
         return this;
     }
 
@@ -290,9 +308,9 @@ public class HomePage extends BasePage {
         return this;
     }
     @FindBy(xpath = "//yt-formatted-string[text()='Hunde Sitters']")
-    WebElement youtubetitle;
+    WebElement youtubeTitle;
     public HomePage verifyNewYoutubeTitle(String text) {
-        Assert.assertTrue(isTextPresent(youtubetitle,text));
+        Assert.assertTrue(isTextPresent(youtubeTitle,text));
         return this;
     }
     @FindBy(xpath = "//div[contains(@class, '_ftInfoItem_tqan6_36') and contains(., 'Germany, Berlin')]")
@@ -344,12 +362,13 @@ public class HomePage extends BasePage {
     }
 
 
-    @FindBy(xpath = "//*[@id='root']/footer/div[1]/div[2]/div[1]//a[2]")
+   @FindBy(xpath = "//*[@id='root']/footer/div[1]/div[2]/div[1]//a[2]")
     WebElement linkHotelForDog;
 
     public HomePage verifyHotelForDogs(String text) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        pause(1200);
         Assert.assertTrue(isTextPresent(linkHotelForDog, text));
         return this;
     }
@@ -488,7 +507,7 @@ public class HomePage extends BasePage {
     public HomePage isRegistrirenLinkClickable() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-        pause(500);
+        pause(700);
         click(linkRegistriren);
         return this;
     }
