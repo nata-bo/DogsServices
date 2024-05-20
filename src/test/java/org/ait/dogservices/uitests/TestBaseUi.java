@@ -43,7 +43,7 @@ public class TestBaseUi {
         }
         WebDriverListener listener = new MyListener();
         driver = new EventFiringDecorator(listener).decorate(driver);
-        driver.get("https://hunde24.online/front/");
+        driver.get("https://dog-app-iw6ow.ondigitalocean.app/");
         logger.info("The link --> " + driver.getCurrentUrl());
         logger.info("***********************************");
         driver.manage().window().maximize();

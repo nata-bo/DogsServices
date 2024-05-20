@@ -44,7 +44,7 @@ public class ApplicationManager {
       //  driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-        driver.get("https://hunde24.online/front/");
+        driver.get("https://dog-app-iw6ow.ondigitalocean.app/");
 
         mainScreen = new MainScreenHelper(driver);
         homePageHelper = new HomePageHelper(driver);

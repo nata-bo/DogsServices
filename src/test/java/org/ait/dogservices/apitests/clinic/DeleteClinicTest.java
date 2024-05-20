@@ -35,7 +35,7 @@ public class DeleteClinicTest extends TestBaseApi {
         ClinicDto clinicDto = ClinicDto.builder()
                 .name("Pets clinic")
                 .description("Clinic for small and big pets")
-                .webSite("https://clinic-hunde.de")
+                .webSite("https://dog-app-iw6ow.ondigitalocean.app/#/clinics")
                 .country("Germany")
                 .clinicCity("Berlin")
                 .postCode("01611")

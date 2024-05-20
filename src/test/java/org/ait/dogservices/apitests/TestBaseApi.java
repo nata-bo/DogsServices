@@ -20,7 +20,7 @@ public class TestBaseApi {
     public  void init() {   // precondition
         System.err.close();
 
-        RestAssured.baseURI = "https://hunde24.online/";
+        RestAssured.baseURI = "https://dog-app-iw6ow.ondigitalocean.app/";
         RestAssured.basePath = "api";
     }
         @BeforeMethod

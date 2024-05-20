@@ -35,7 +35,7 @@ public class DeleteKennelTest extends TestBaseApi {
         KennelDto kennelDto = KennelDto.builder()
                 .name("Hunde kennel")
                 .description("Kennel for small and big dogs")
-                .webSite("https://kennel-hunde.de")
+                .webSite("https://dog-app-iw6ow.ondigitalocean.app/#/kennels")
                 .country("Germany")
                 .kennelCity("Berlin")
                 .postCode("01611")
